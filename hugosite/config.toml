@@ -1,0 +1,213 @@
+# Site settings
+baseURL = "http://storiesoftherussellhouse.ca/"
+languageCode = "en-us"
+title = "Stories of the Russell House"
+theme = "forty"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source)
+  # To create multi-line text in strings use the """example Text""" format
+  #
+  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # Provide your metadata here.
+  name = "Cristina Wood"
+  description = "Your description"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Just a custom image variable, please define it in .md files for content.
+  image = ""
+
+  # 404 error customization
+  [params.error404]
+    heading = "Sorry! This page is nowhere to be found."
+    text = "Please visit [storiesoftherussellhouse.ca](/)"
+
+  # Navigation Section
+  [params.navigation]
+    title = "Stories of the Russell House"
+    subtitle = "A digital history experiment by Cristina Wood"
+    menu = "Menu"
+    # Optional logo as brand stored in img/
+    # logo = "logo.png"
+
+    [[params.navigation.links]]
+      name = "Home"
+      url = "#"
+
+    [[params.navigation.links]]
+      name = "Blogs"
+      url = "blogs"
+
+    [[params.navigation.links]]
+      name = "Generic Blog"
+      url = "blogs/ipsum"
+
+    [[params.navigation.links]]
+      name = "Elements"
+      url = "elements.html"
+
+    # Add custom links here by uncommenting code below. To remove links just delete
+    # the [[params.navigation.links]] map associated with that link. Copy and paste
+    # code below if you need more links. Buttons work in the same way.
+    # [[params.navigation.links]]
+    #    name = "NameOfLink"
+    #    url = "UrlOfLink"
+
+    # Button Style 1
+    [[params.navigation.button1]]
+      name = "Get Started"
+      url = "stories"
+
+    # Button Style 2
+    [[params.navigation.button2]]
+      name = "Log In"
+      url = "#"
+
+
+  # Banner section
+  [params.banner]
+    # To change the background image on the homepage banner, replace 'banner.jpg' in
+    # the 'static/img' folder.
+    title = "Stories of the Russell House"
+    subtitle = "A DIGITAL HISTORY EXPERIMENT"
+    buttonText = "Get Started"
+
+
+  # Tiles Section
+  [params.tiles]
+    enable = true
+    # Display your showcases here.
+    
+    [[params.tiles.showcase]]
+      title = "The Russell Theatre"
+      subtitle = "The Theatre and its world-famous performers"
+      image = "RussellTheatre.jpg"
+      url = "stories/russelltheatre"
+
+    [[params.tiles.showcase]]
+      title = "From 1840-1928"
+      subtitle = "The Russell Through Time"
+      image = "TimelineImage.jpg"
+      url = "stories/timeline"
+
+    [[params.tiles.showcase]]
+      title = "The Count"
+      subtitle = "Manager and Proprietor of the Russell House"
+      image = "F.X.StJacques.jpg"
+      url = "stories/thecount"
+
+    [[params.tiles.showcase]]
+      title = "Closing Down"
+      subtitle = "Fire, empty rooms & expropriation"
+      image = "emptyhalls.jpg"
+      url = "stories/closingdown"
+
+    [[params.tiles.showcase]]
+      title = "1894 Colonial Conference"
+      subtitle = "The world stage in Ottawa"
+      image = "colonialconference.jpg"
+      url = "stories/1894conference"
+
+    [[params.tiles.showcase]]
+      title = "The Stanley Cup and the Russell"
+      subtitle = "The origins of the NHL hockey trophy"
+      image = "firststanleycup.jpg"
+      url = "stories/stanleycup"
+    # You can make more showcases by copy and pasting the code above
+
+  [params.blog]
+    # All blogs defined in their own files. You can find example blogs
+    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    # To add more blogs just copy and paste the code.
+
+  # Section Type Two
+  [params.two]
+    enable = true
+    title = "See the collections"
+    subtitle = """This site is built with Hugo and Omeka. Omeka is an open-source tool meant to enable academics and enthusiasts to create online exhibits and showcases. Check it out! """
+    buttonText = "Get Started"
+    url = "collections"
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    buttonSend = "Send message"
+    buttonClear = "Clear"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below and uncomment
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    # formEmail = "example@domain.com"
+
+    # Contact Section
+    # You can add multiple emails, phone numbers, or addresses
+    # by copying the corresponding map with frontmatter code.
+    # [[params.contact.email]]
+    # title = "Email"
+    # email = "example@domain.com"
+
+    # [[params.contact.phone]]
+    # title = "Phone"
+    # phone = "(000) 000-0000 x1234"
+
+    # [[params.contact.address]]
+    # title = "Address"
+    # street = "Street"
+    # city = "City, ST 00000"
+    # country = "Country"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Cristina Wood"
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      url= "https://twitter.com/cristina__wood"
+      label = "Twitter"
+
+    # [[params.footer.social]]
+     # icon = "fa-facebook"
+    #  url= "https://www.facebook.com"
+     # label = "Facebook"
+
+    # [[params.footer.social]]
+     # icon = "fa-instagram"
+     # url= "https://www.instagram.com"
+     # label = "Instagram"
+    
+    [[params.footer.social]]
+      icon = "fa-github"
+      url= "https://github.com/cristinawood"
+      label = "GitHub"
+
+    # [[params.footer.social]]
+     # icon = "fa-linkedin"
+     # url= "https://www.linkedin.com"
+     # label = "LinkedIn"
+
+    [[params.footer.quicklinks]]
+      text = "Design: "
+      url= "https://www.html5up.net"
+      alt = "HTML5 UP"
